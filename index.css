@@ -1,0 +1,309 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Starting navigation bar  */
+
+.Nav_Bar{
+    background-color: rgba(9, 9, 9, 0.928);
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-between;
+    padding: 1.5vw 4vw;
+    top: 0;
+    position: sticky;
+    z-index: 20;
+    /* margin-bottom: 2vw; */
+}
+
+.Nav_Bar .logo a{
+    font-weight: bold;
+    font-size: 3vw;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.Nav_Bar ul{
+    display: flex;
+    padding: 1.3vw 1vw 0vw 1vw;
+}
+
+.Nav_Bar ul li{
+    padding: 0vw 1vw;
+    list-style: none;
+    cursor: pointer;
+}
+
+.Nav_Bar ul li a{
+    font-weight: bold;
+    /* font-size: 3vw; */
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
+/* starting main section  */
+
+main{
+    height: 86vh;
+    background-image:linear-gradient(rgb(109, 104, 104),rgb(62, 61, 61));
+  
+
+    
+}
+
+main .home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vw;
+    /* padding-left: 3vw; */
+    color: white;
+    font-size: 5vw;
+    
+
+}
+
+.Home_course_para{
+    padding: 0vw 2vw;
+    text-align: center;
+}
+
+main .home button{
+    padding: 1vw;
+    border-radius: 2vw;
+    margin-top: 2vw;
+    cursor: pointer;
+    border: 0.5px solid black;
+    background-color: rgb(43, 43, 249);
+    color: aliceblue;
+    font-size:1.5vw;
+}
+
+main .home button a{
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
+main .home button a:hover{
+    text-decoration: none;
+    color: rgb(43, 43, 249);
+    
+}
+
+
+main .home button:hover{
+    padding: 1vw;
+    border-radius: 2vw;
+    margin-top: 2vw;
+    cursor: pointer;
+    border: 0.5px solid black;
+    background-color: rgb(158, 187, 211);
+    font-size: 1.5vw;
+    
+}
+
+
+
+/* skills section started */
+.skill{
+    text-align: center;
+    margin: 5vw 2vw;
+}
+
+.skills_main{
+    display: flex;
+}
+
+.skills_secondry{
+    box-shadow:2px 2px 0.3px grey, -2px -2px 0.3px grey ;
+    /* transform: translateY(10px); */
+    transition: all 0.3s ease-in-out;
+    padding: 1vw ;
+    margin: 3vw 9vw;
+}
+
+.skills_secondry img{
+    width: 12vw;
+    height: 15vw;
+}
+
+
+/* starting portfolio design  */
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 1vw;
+}
+
+.portfolio_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3vw 1vw;
+   
+}
+
+.portfolio_main img{
+    width: 20vw;
+    height: 25vw;
+}
+
+.portfolio_secondry{
+    border: 2px solid rgb(214, 212, 212);
+    margin: 1vw;
+    padding: 0.5vw;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* starting about us  */
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.timeline h1{
+    /* border: 2px solid black; */
+    /* padding-bottom: 30vw; */
+    position: relative;
+    top: -10vw;
+}
+.timeline h3{
+    /* border: 2px solid black; */
+    /* padding-bottom: 30vw; */
+    position: relative;
+    top: -9vw;
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    /* padding-top: 15vw; */
+    /* background: rgba(0, 0, 0, 0.3); */
+}
+
+.text-box{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left-container{
+    left: 0;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img{
+    left: -20px;
+}
+
+.timeline::after{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #080505;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+/* starting cv  */
+.curriculumvitae{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw 1vw;
+}
+.curriculumvitae_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    margin: 2vw;
+    /* background-color: red; */
+    width: 100%;
+}
+.cv_secondry1{
+    width:35% ;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+.cv_secondry1 img{
+    width:14vw;
+    /* height: 10vw; */
+    padding: 5vw 0vw;
+    border-radius: 40%;
+    
+}
+
+.cv_secondry2{
+    width:65% ;
+    /* border: 2px solid black; */
+}
+
+/* started contact form  */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw 1vw;
+    background-image: url("./images/calculator-app.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.contact_form form{
+    /* display: flex;
+    flex-direction: column; */
+    font-size: 1.8vw;
+}
+
+.contact_form form input{
+    width:50vw;
+    height: 3vw;
+    margin: 2vw 1vw;
+    border-radius: 1vw;
+}
+
+
+
+/* started footer section  */
+footer{
+    padding: 1.5vw ;
+    font-size: large;
+    text-align: center;
+}
