@@ -11,7 +11,8 @@ html{
 /* Starting navigation bar  */
 
 .Nav_Bar{
-    background-color: rgba(9, 9, 9, 0.928);
+    /* background-color: rgba(9, 9, 9, 0.928); */
+    background:#130808;
     display: flex;
     color: whitesmoke;
     justify-content: space-between;
@@ -19,7 +20,19 @@ html{
     top: 0;
     position: sticky;
     z-index: 20;
+    visibility:hidden;
+    opacity:0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay:1.2s;
+
     /* margin-bottom: 2vw; */
+}
+
+@keyframes show-content{
+    100%{
+        visibility:visible;
+        opacity:1;
+    }
 }
 
 .Nav_Bar .logo a{
@@ -49,66 +62,148 @@ html{
 }
 
 /* starting main section  */
-
-main{
-    height: 86vh;
-    background-image:linear-gradient(rgb(109, 104, 104),rgb(62, 61, 61));
-  
-
-    
+.home{
+    /* top: */
+    display:flex;
+    align-items:center;
+    height:84vh;
+    padding:60px 9% 0;
+    color:#e2dcdc;
+    background:#130808;
+    visibility:hidden;
+    opacity:0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay:1.6s;
 }
 
-main .home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2vw;
-    /* padding-left: 3vw; */
-    color: white;
-    font-size: 5vw;
-    
-
+.home-info h1{
+    font-size:55px;  
 }
 
-.Home_course_para{
-    padding: 0vw 2vw;
-    text-align: center;
+.home-info h2{
+    font-size:32px;  
+    margin-top:-10px;
 }
 
-main .home button{
-    padding: 1vw;
-    border-radius: 2vw;
-    margin-top: 2vw;
-    cursor: pointer;
-    border: 0.5px solid black;
-    background-color: rgb(43, 43, 249);
-    color: aliceblue;
-    font-size:1.5vw;
+.home-info h2 span{
+    display:inline-block;
+    color:transparent;
 }
 
-main .home button a{
-    text-decoration: none;
-    color: whitesmoke;
-    
+.home-info p{
+    font-size:16px;  
+    margin:10px 0 25px;
 }
 
-main .home button a:hover{
-    text-decoration: none;
-    color: rgb(43, 43, 249);
-    
+.home .btn-sci{
+    display:flex;
+    align-items:center;
+}
+.home .btn-sci a{
+   text-decoration:none;
+}
+
+.home-info .btn-sci .sci a:hover{
+   text-decoration:none;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 30px;
+    background:#7cf03d;
+    border:2px solid #7cf03d;
+    border-radius:40px;
+    box-shadow:0 0 10px #7cf03d;
+    font-size:16px;
+    color:#1f242d;
+    font-weight:600;
+    transition:.5s;
+}
+
+.btn:hover{
+    background:transparent;
+    color:#7cf03d;
+    box-shadow:none;
+}
+
+.home-info .btn-sci .sci{
+    margin-left:20px;
+}
+
+.home-info .btn-sci .sci a{
+    display:inline-flex;
+    padding:8px;
+    border:2px solid #7cf03d;
+    border-radius:50%;
+    font-size:20px;
+    color:#7cf03d;
+    margin:0 8px;
+}
+
+.home-info .btn-sci .sci a:hover{
+    background: #7cf03d;
+    color:#1f242d;
+    box-shadow:0 0 10px #7cf03d;
+}
+
+.home-img{
+    margin-left:15vw;
+    margin-bottom:5vw;
+}
+
+.home-img .img-box{
+    position:relative;
+    width:32vw;
+    height:32vw;
+    /* background:red; */
+    border-radius:50%;
+    padding:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.home-img .img-box::before,
+.home-img .img-box::after{
+content:'';
+  position:absolute;
+  width:500px;
+  height:500px;
+  background:conic-gradient(transparent,transparent,transparent,#7cf03d);
+  transform:rotate(0deg);
+  animation:rotate-border 10s linear infinite;
+}
+
+@keyframes rotate-border{
+    100%{
+        transform:rotate(360deg)
+    }
+}
+.home-img .img-box .img-item{
+    width:100%;
+    height:100%;
+    background:#1f242d;
+    border:.1px solid #1f242d;
+    border-radius:50%;
+    z-index:1;
+    display:flex;
+    justify-content:center;
+    overflow:hidden;
+    position:relative;
+}
+
+.home-img .img-box .img-item img{
+   position:absolute;
+   display:block;
+   width:100%;
+   object-fit:cover;
+   mix-blend-mode:lighten;
 }
 
 
-main .home button:hover{
-    padding: 1vw;
-    border-radius: 2vw;
-    margin-top: 2vw;
-    cursor: pointer;
-    border: 0.5px solid black;
-    background-color: rgb(158, 187, 211);
-    font-size: 1.5vw;
-    
-}
+/* .home  */
+
 
 
 
@@ -151,7 +246,7 @@ main .home button:hover{
     align-items: center;
     flex-wrap: wrap;
     padding: 3vw 1vw;
-   
+    cursor:pointer;
 }
 
 .portfolio_main img{
@@ -306,4 +401,28 @@ footer{
     padding: 1.5vw ;
     font-size: large;
     text-align: center;
+}
+
+.bars-animation{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    z-index:-1;
+}
+
+.bars-animation .bar{
+    width:100%;
+     height:84vh;
+    background:#1f242d;
+    /* border:2px solid red; */
+    transform:translateY(-100%);
+    animation:show-bars .5s ease-in-out forwards;
+    animation-delay:calc(.1s * var(--i));
+}
+
+@keyframes show-bars{
+    100%{
+        transform:translateY(0%)
+    }
 }
