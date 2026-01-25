@@ -1,266 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Vinita – Frontend Developer skilled in HTML, CSS, JavaScript, React.js. View my portfolio, projects, and contact details.">
-    <title>Vinita | Frontend Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="index.css">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vinita – Frontend Developer skilled in HTML, CSS, JavaScript, React.js." />
+  <title>Vinita | Frontend Developer</title>
+
+  <!-- Tailwind CSS CDN -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
-<body id="top">
-    <!-- starting Navigation Bar  -->
-    <nav class="Nav_Bar">
-        <div class="logo"><a href="#top">Vinita</a></div>
-        <div>
-            <ul>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#curriculumvitae">CURRICULUM VITAE</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-            <i class="ri-align-justify"></i>
-        </div>
+<body class="bg-gray-900 text-gray-100 scroll-smooth" id="top">
+
+<!-- NAVBAR -->
+
+<header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur border-b border-gray-700">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+    <a href="#top" class="text-2xl font-bold text-green-400">Vinita</a>
+    <nav class="hidden md:block">
+      <ul class="flex gap-6 font-medium">
+        <li><a href="#skills" class="hover:text-green-400">Skills</a></li>
+        <li><a href="#portfolio" class="hover:text-green-400">Portfolio</a></li>
+        <li><a href="#about" class="hover:text-green-400">About</a></li>
+        <li><a href="#cv" class="hover:text-green-400">CV</a></li>
+        <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
+      </ul>
     </nav>
+  </div>
+</header>
 
+<!-- HERO -->
 
-    <div class="bars-animation">
-        <div class="bar" style="--i:6"></div>
-        <div class="bar" style="--i:5"></div>
-        <div class="bar" style="--i:4"></div>
-        <div class="bar" style="--i:3"></div>
-        <div class="bar" style="--i:2"></div>
-        <div class="bar" style="--i:1"></div>
+<section class="min-h-screen flex items-center">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 class="text-4xl md:text-6xl font-bold">Hi, I'm <span class="text-green-400">Vinita</span></h1>
+      <h2 class="text-xl md:text-2xl mt-4">Frontend Developer</h2>
+      <p class="mt-4 text-gray-300">React.js Enthusiast | Web Developer</p>
 
+```
+  <div class="flex items-center gap-4 mt-6">
+    <a href="vinita.pdf" target="_blank" class="px-6 py-2 rounded-full bg-green-400 text-gray-900 font-semibold hover:bg-green-300">Download CV</a>
+    <a href="https://github.com/vinita978" target="_blank"><i class="bx bxl-github text-2xl hover:text-green-400"></i></a>
+    <a href="https://www.linkedin.com/in/vkwd/" target="_blank"><i class="bx bxl-linkedin text-2xl hover:text-green-400"></i></a>
+    <a href="mailto:vinitakumari504931@gmail.com"><i class="bx bx-envelope text-2xl hover:text-green-400"></i></a>
+    <a href="https://wa.me/917701835257" target="_blank"><i class="bx bxl-whatsapp text-2xl hover:text-green-400"></i></a>
+  </div>
+</div>
+
+<div class="flex justify-center">
+  <img src="images/pic.jpeg" alt="Vinita" class="w-72 h-72 rounded-full  border-4 border-green-400" />
+</div>
+```
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="py-20 bg-gray-800">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-10">Skills</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-gray-900 p-6 rounded-xl">
+        <img src="images/th.jpeg" class="w-20 h-20 mx-auto object-contain" />
+        <h3 class="text-xl font-semibold mt-4">Frontend Development</h3>
+        <p class="text-gray-400 mt-2">HTML, CSS, JavaScript, React.js</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-xl">
+        <img src="images/th (1).jpeg" class="w-20 h-20 mx-auto object-contain" />
+        <h3 class="text-xl font-semibold mt-4">Backend Development</h3>
+        <p class="text-gray-400 mt-2">Node.js, Express, MongoDB</p>
+      </div>
     </div>
+  </div>
+</section>
 
-    <!-- starting Home main  -->
-    <main class="home">
-        <div class="home-info">
-            <h1>Vinita</h1>
-            <h2>I'm a Frontend Developer
-            </h2>
-            <p>Frontend Developer | React.js Enthusiast | Web Developer</p>
-            <div class="btn-sci">
-                <a href="vinita.pdf" target="_blank" class="btn" >Download CV</a>
-                <div class="sci">
-                    <a href="https://github.com/vinita978" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/vkwd/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vinitakumari504931@gmail.com&su=Portfolio%20Contact&body=Hello%20Vinita"
-                        target="_blank">
-                        <i class='bx bx-envelope'></i>
-                    </a>
-                    <a href="https://wa.me/917701835257" target="_blank" aria-label="Chat on WhatsApp">
-                        <i class='bx bxl-whatsapp'></i>
-                    </a>
-                </div>
-            </div>
+<!-- PORTFOLIO -->
+
+<section id="portfolio" class="py-20">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-10">Portfolio</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-800 rounded-xl overflow-hidden">
+        <img src="images/ThirdPrj.png" class="h-48 w-full object-cover" />
+        <div class="p-4">
+          <h3 class="font-semibold">Library App</h3>
+          <p class="text-gray-400">React.js</p>
         </div>
-
-        <div class="home-img">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="images/pic.jpeg" alt="vinita">
-                </div>
-            </div>
-
+      </div>
+      <div class="bg-gray-800 rounded-xl overflow-hidden">
+        <img src="images/SecondPrj.png" class="h-48 w-full object-cover" />
+        <div class="p-4">
+          <h3 class="font-semibold">Shopping App</h3>
+          <p class="text-gray-400">React.js</p>
         </div>
-    </main>
-
-    <!-- starting skill section  -->
-
-    <section class="skill" id="skills">
-        <h1>SKILLS</h1><br>
-        <h3>Continuously improving my skills and knowledge in the field.</h3>
-        <div class="skills_main">
-            <div class="skills_secondry">
-                <img src="./images/th.jpeg" alt="Front-end Development">
-                <h2>Front-end Development</h2>
-                <p>Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building user-friendly
-                    interfaces, and using modern frameworks like ReactJS.</p>
-            </div>
-            <div class="skills_secondry">
-                <img src="./images/th (1).jpeg" alt="Back-end Development">
-                <h2>Back-end Development</h2>
-                <p>Skilled in server-side programming using technologies like Node.js and Express. Experience working
-                    with databases such as MongoDB and MySQL.</p>
-            </div>
+      </div>
+      <div class="bg-gray-800 rounded-xl overflow-hidden">
+        <img src="images/ecommerce.png" class="h-48 w-full object-cover" />
+        <div class="p-4">
+          <h3 class="font-semibold">YouTube Clone</h3>
+          <p class="text-gray-400">MERN Stack</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- starting portfolio section  -->
-    <section class="portfolio" id="portfolio">
-        <h1>Portfolio</h1><br>
-        <h3>A collection of projects I've worked on.</h3>
-        <div class="portfolio_main">
+<!-- ABOUT -->
 
-            <div class="portfolio_secondry">
-                <img src="./images/ThirdPrj.png" alt="Library">
-                <h2>Library</h2>
-                <p>React JS</p>
-            </div>
+<section id="about" class="py-20 bg-gray-800">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-8">About Me</h2>
+    <p class="text-gray-300">Bachelor of Vocation in Web Development (2020–2024). Completed a 6‑month internship at Extension Technology. Aspiring Full Stack Developer.</p>
+  </div>
+</section>
 
-            <div class="portfolio_secondry">
-                <img src="./images/SecondPrj.png" alt="Online Shopping App">
-                <h2>Online Shopping App</h2>
-                <p>React JS </p>
-            </div>
+<!-- CV -->
 
-            <div class="portfolio_secondry">
-                <img src="./images/ecommerce.png" alt="You Tube Clone">
-                <h2>You Tube Clone</h2>
-                <p>MERN </p>
-            </div>
-        </div>
-    </section>
+<section id="cv" class="py-20">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Curriculum Vitae</h2>
+    <p class="text-gray-300">Email: vinitakumari504931@gmail.com | Phone: 7701835257 | Faridabad, Haryana</p>
+  </div>
+</section>
 
-    <!-- starting about us section  -->
-    <section class="timeline" id="about">
-        <h1>ABOUT</h1>
-        <h3>Learn more about me, my background, and what motivates me.</h3>
-        <div class="container left-container">
-            <img src="./images/calculator-app.jpg" alt="Higher Education">
-            <div class="text-box">
-                <h2>Higher Education</h2>
-                <small>2016-2020</small>
-                <p>Completed 10th and 12th Education.</p>
-            </div>
+<!-- CONTACT -->
 
-        </div>
-        <div class="container right-container">
-            <img src="./images/calculator-app.jpg" alt="Graduation">
-            <div class="text-box">
-                <h2>Graduation</h2>
-                <small>2020-2024</small>
-                <p>Completed my graduation degree in computer science.</p>
-            </div>
+<section id="contact" class="py-20 bg-gray-800">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+    <form class="grid gap-4 max-w-md mx-auto">
+      <input type="text" placeholder="Your Name" class="p-3 rounded bg-gray-900 border border-gray-700" required />
+      <input type="email" placeholder="Your Email" class="p-3 rounded bg-gray-900 border border-gray-700" required />
+      <textarea rows="4" placeholder="Your Message" class="p-3 rounded bg-gray-900 border border-gray-700" required></textarea>
+      <button class="bg-green-400 text-gray-900 font-semibold py-2 rounded hover:bg-green-300">Send Message</button>
+    </form>
+  </div>
+</section>
 
-        </div>
-        <div class="container left-container">
-            <img src="./images/calculator-app.jpg" alt="Extension Technology">
-            <div class="text-box">
-                <h2>Extension Technology</h2>
-                <small>2023-2024</small>
-                <p>completed an internship sep 2023 to march 2024. </p>
-            </div>
+<!-- FOOTER -->
 
-        </div>
-        <div class="container right-container">
-            <img src="./images/calculator-app.jpg" alt="future">
-            <div class="text-box">
-                <h2>future</h2>
-                <small>Aspiring Work as a Full Stack Developer.</small>
-                <p></p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- starting curriculum vitae section  -->
-    <section class="curriculumvitae" id="curriculumvitae">
-        <h1>CURRICULUM VITAE</h1><br>
-        <h3>A small sampling of some of the projects I've worked on as a student of the ICS program.</h3>
-        <div class="curriculumvitae_main">
-            <div class="cv_secondry1">
-                <img src="./images/pic.jpeg" alt="VINITA">
-                <p style="padding: 0.2vw 0vw;">VINITA</p>
-                <p style="padding: 0.2vw 0vw;">vinitakumari504931@gmail.com</p>
-                <p style="padding: 0.2vw 0vw;">7701835257</p>
-                <p style="padding: 0.2vw 0vw;">Sarurpur, Ballabgargh, Faridabad, Haryana</p>
-                <br><br>
-                <h1>TECHNICAL SKILLS</h1>
-                <ul>
-                    <li style="list-style: none;padding:0.2vw 0vw;">HTML</li>
-                    <li style="list-style: none;padding:0.2vw 0vw;">CSS</li>
-                    <li style="list-style: none;padding:0.2vw 0vw;">JAVASCRIPT</li>
-                    <li style="list-style: none;padding:0.2vw 0vw;">REACT.JS</li>
-                </ul>
-
-            </div>
-            <div class="cv_secondry2">
-                <h1>Profile</h1>
-                <br>
-                <hr>
-                <br>
-                <P> Aspiring Full Stack Web Developer seeking junior-level opportunities to build scalable and
-                    user-friendly web applications.</P>
-                <br>
-                <h1>PROFESSIONAL/ EDUCATION QUALIFICATION</h1>
-                <br>
-                <hr>
-                <br>
-                <ul>
-                    <li>Bachelor Of Vocation in Web-development from J.C BOSE UNIVERSITY OF SCIENCE & TECHNOLOGY (YMCA)
-                        Faridabad.</li>
-                    <li>Passed higher secondary from Haryana Board in 2020.</li>
-                    <li>passed matriculation from Haryana Board, in 2018.</li>
-                </ul>
-                <br>
-                <h1>WORK EXPERIENCE</h1>
-                <br>
-                <hr>
-                <br>
-                <P>I have completed Six month internship in Extension Technology.</P><br>
-                <h1>ACHIEVEMENT</h1>
-                <br>
-                <hr>
-                <br>
-                <ul>
-                    <li>Create doctype and many validation with the help of JavaScript. </li>
-                    <li>Email integration with ERP Next and CRM</li>
-                    <li>Gupshup whatsapp Integration with CRM.</li>
-                    <li>Create print format with the help of HTML, CSS and Jinja.</li>
-                    <li>Create form Add many field and data fetch server.</li>
-                </ul>
-                <br>
-            </div>
-        </div>
-    </section>
-
-    <!-- starting contact section  -->
-    <section class="contact" id="contact">
-        <h1>CONTACT ME</h1><br>
-        <h3>Interested if I'd be the right fit for your team? Fill in this form and I will respond within 24-48 hours.
-        </h3><br>
-        <div>
-            <div class="contact_form">
-                <form action="">
-                    <label for="name">Enter Name:</label>
-                    <input type="text" id="name" required><br>
-                    <label for="email">Enter Email:&nbsp;</label>
-                    <input type="email" id="email" required><br>
-                    <label for="tel">Phone No:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="tel" id="tel" required><br>
-                    <label for="text">Message:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" id="text" required>
-                </form><br>
-                <button
-                    style="margin-left: 50%; padding:0.2vw 2vw; font-size:1.5vw;cursor:pointer;border-radius:1vw">Submit</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- started footer section  -->
-    <footer>
-        <p>Copyright © 2025 Vinita</p>
-    </footer>
-
-
-
+<footer class="py-6 text-center text-gray-400">
+  © 2025 Vinita. All rights reserved.
+</footer>
 
 </body>
-
 </html>
